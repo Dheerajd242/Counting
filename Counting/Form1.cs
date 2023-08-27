@@ -44,7 +44,7 @@ namespace Counting
 
         private void txtStartFrom_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if(!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
             {
                 e.Handled = true;
             }
@@ -57,7 +57,7 @@ namespace Counting
 
         private void rbBlack_CheckedChanged(object sender, EventArgs e)
         {
-            if(rbBlack.Checked)
+            if (rbBlack.Checked)
             {
                 rbRed.Checked = false;
                 rbBlue.Checked = false;
@@ -116,7 +116,7 @@ namespace Counting
         {
 
             if (chItalic.Checked)
-            { 
+            {
                 txtDivisibleNumbers.Font = new Font(txtDivisibleNumbers.Font.FontFamily, txtDivisibleNumbers.Font.Size, FontStyle.Italic);
             }
             else
@@ -132,15 +132,15 @@ namespace Counting
             {
                 MessageBox.Show("please fill the necessary fields");
             }
-            else if(cmbDivisibleTerm.SelectedIndex==-1)
-            { 
+            else if (cmbDivisibleTerm.SelectedIndex == -1)
+            {
                 MessageBox.Show("please select divisible term");
             }
             else
             {
 
-            firstNumber = Convert.ToInt32(txtStartFrom.Text);
-            lastNumber = Convert.ToInt32(txtTo.Text);
+                firstNumber = Convert.ToInt32(txtStartFrom.Text);
+                lastNumber = Convert.ToInt32(txtTo.Text);
                 for (int i = firstNumber; i < lastNumber; i++)
                 {
                     if (i % divisibleTerm == 0)
