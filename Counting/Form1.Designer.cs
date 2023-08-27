@@ -38,10 +38,10 @@
             this.cmbDivisibleTerm = new System.Windows.Forms.ComboBox();
             this.txtDivisibleNumbers = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.rbBlack = new System.Windows.Forms.RadioButton();
-            this.rbRed = new System.Windows.Forms.RadioButton();
-            this.rbBlue = new System.Windows.Forms.RadioButton();
             this.rbGreen = new System.Windows.Forms.RadioButton();
+            this.rbBlue = new System.Windows.Forms.RadioButton();
+            this.rbRed = new System.Windows.Forms.RadioButton();
+            this.rbBlack = new System.Windows.Forms.RadioButton();
             this.chBold = new System.Windows.Forms.CheckBox();
             this.chItalic = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
@@ -152,29 +152,17 @@
             this.groupBox1.Text = "Select Color";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // rbBlack
+            // rbGreen
             // 
-            this.rbBlack.AutoSize = true;
-            this.rbBlack.Location = new System.Drawing.Point(6, 25);
-            this.rbBlack.Name = "rbBlack";
-            this.rbBlack.Size = new System.Drawing.Size(77, 24);
-            this.rbBlack.TabIndex = 0;
-            this.rbBlack.TabStop = true;
-            this.rbBlack.Text = "Black";
-            this.rbBlack.UseVisualStyleBackColor = true;
-            this.rbBlack.CheckedChanged += new System.EventHandler(this.rbBlack_CheckedChanged);
-            // 
-            // rbRed
-            // 
-            this.rbRed.AutoSize = true;
-            this.rbRed.Location = new System.Drawing.Point(6, 55);
-            this.rbRed.Name = "rbRed";
-            this.rbRed.Size = new System.Drawing.Size(63, 24);
-            this.rbRed.TabIndex = 1;
-            this.rbRed.TabStop = true;
-            this.rbRed.Text = "Red";
-            this.rbRed.UseVisualStyleBackColor = true;
-            this.rbRed.CheckedChanged += new System.EventHandler(this.rbRed_CheckedChanged);
+            this.rbGreen.AutoSize = true;
+            this.rbGreen.Location = new System.Drawing.Point(6, 115);
+            this.rbGreen.Name = "rbGreen";
+            this.rbGreen.Size = new System.Drawing.Size(81, 24);
+            this.rbGreen.TabIndex = 3;
+            this.rbGreen.TabStop = true;
+            this.rbGreen.Text = "Green";
+            this.rbGreen.UseVisualStyleBackColor = true;
+            this.rbGreen.CheckedChanged += new System.EventHandler(this.rbGreen_CheckedChanged);
             // 
             // rbBlue
             // 
@@ -188,17 +176,29 @@
             this.rbBlue.UseVisualStyleBackColor = true;
             this.rbBlue.CheckedChanged += new System.EventHandler(this.rbBlue_CheckedChanged);
             // 
-            // rbGreen
+            // rbRed
             // 
-            this.rbGreen.AutoSize = true;
-            this.rbGreen.Location = new System.Drawing.Point(6, 115);
-            this.rbGreen.Name = "rbGreen";
-            this.rbGreen.Size = new System.Drawing.Size(81, 24);
-            this.rbGreen.TabIndex = 3;
-            this.rbGreen.TabStop = true;
-            this.rbGreen.Text = "Green";
-            this.rbGreen.UseVisualStyleBackColor = true;
-            this.rbGreen.CheckedChanged += new System.EventHandler(this.rbGreen_CheckedChanged);
+            this.rbRed.AutoSize = true;
+            this.rbRed.Location = new System.Drawing.Point(6, 55);
+            this.rbRed.Name = "rbRed";
+            this.rbRed.Size = new System.Drawing.Size(63, 24);
+            this.rbRed.TabIndex = 1;
+            this.rbRed.TabStop = true;
+            this.rbRed.Text = "Red";
+            this.rbRed.UseVisualStyleBackColor = true;
+            this.rbRed.CheckedChanged += new System.EventHandler(this.rbRed_CheckedChanged);
+            // 
+            // rbBlack
+            // 
+            this.rbBlack.AutoSize = true;
+            this.rbBlack.Location = new System.Drawing.Point(6, 25);
+            this.rbBlack.Name = "rbBlack";
+            this.rbBlack.Size = new System.Drawing.Size(77, 24);
+            this.rbBlack.TabIndex = 0;
+            this.rbBlack.TabStop = true;
+            this.rbBlack.Text = "Black";
+            this.rbBlack.UseVisualStyleBackColor = true;
+            this.rbBlack.CheckedChanged += new System.EventHandler(this.rbBlack_CheckedChanged);
             // 
             // chBold
             // 
